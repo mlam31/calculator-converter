@@ -1,5 +1,4 @@
 const display = document.getElementById("display")
-console.log("Hello world")
 
 function appendToDisplay(input){
     let operateurs = ["+", "-", "*", "/", "%"];
@@ -18,13 +17,16 @@ function clearDisplay(){
 }
 
 const toggleConvertedBtn = document.getElementById("toggleConvertedBtn")
-toggleConvertedBtn.addEventListener('click', function(){
-    if (this.className === "nonConvertedBtn"){
-        this.className = "convertedBtn"
-        console.log(this.className)
+function toggleConvert(){
+    if (toggleConvertedBtn.className === "nonConvertedBtn"){
+        toggleConvertedBtn.className = "convertedBtn"
+        console.log(toggleConvertedBtn.className)
     }else {
-        this.className = "nonConvertedBtn"
-        console.log(this.className)
+        toggleConvertedBtn.className = "nonConvertedBtn"
+        console.log(toggleConvertedBtn.className)
     }
+}
 
-})
+fetch("https://v6.exchangerate-api.com/v6/5f71cff4e788356479604a66/latest/USD")
+    .then(data => console.log(data))
+    .catch(error => console.error(error))
