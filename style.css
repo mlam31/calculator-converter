@@ -77,3 +77,27 @@ button:active{
     color: white;
 
 }
+
+.nonConvertedBtn{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.nonConvertedBtn:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+
+.nonConvertedBtn:active{
+    background-color: hsl(0, 0%, 80%);
+}
+
+.convertedBtn{
+    background-color: hsl(39, 84%, 55%);
+}
+
+.convertedBtn:hover{
+    background-color: hsl(39, 84%, 75%);
+}
+
+.convertedBtn:active{
+    background-color: hsl(39, 84%, 85%);
+}

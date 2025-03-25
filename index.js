@@ -16,3 +16,15 @@ function calculate(){
 function clearDisplay(){
     display.value = "";
 }
+
+const toggleConvertedBtn = document.getElementById("toggleConvertedBtn")
+toggleConvertedBtn.addEventListener('click', function(){
+    if (this.className === "nonConvertedBtn"){
+        this.className = "convertedBtn"
+        console.log(this.className)
+    }else {
+        this.className = "nonConvertedBtn"
+        console.log(this.className)
+    }
+
+})
